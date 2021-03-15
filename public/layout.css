@@ -1,0 +1,63 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar-brand {
+  font-family: Yatra One, cursive;
+  font-size: 32px;
+}
+a.active {
+  font-size: 17px;
+  color: #5e548e;
+}
+nav {
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 22.4px;
+  background-color: green;
+}
+
+a {
+  color: whitesmoke;
+}
+a:hover {
+  color: black;
+}
+#addPet,
+#login {
+  margin-right: 10px;
+}
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+#dogBreed:hover,
+#catBreed:hover {
+  background-color: lightgray;
+}
+
+footer {
+  background-color: green;
+  font-size: 15px;
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  height: 50px;
+  color: white;
+  padding: 10px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      color: white
+    }
+
+    .bg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)),
+
+        url("https://images.wallpaperscraft.com/image/dog_cat_grass_german_shepherd_65061_1280x720.jpg");
+      width: 100%;
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover
+    }
+
+    sup {
+      color: red
+    }
+
+    .form-container {
+      margin: 60px auto 20px auto;
+      padding: 20px;
+      width: 400px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    #btn {
+      color: white;
+      background-color: #231942;
+      border-radius: 5px
+    }
+
+    p {
+      text-align: center;
+      margin-top: 10px
+    }
+
+    @media screen and (max-width: 500px) {
+      .form-container {
+        width: 100%
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid bg">
+
+    <div class="row justify-content-center">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <form class="form-container" action="/signup" method="POST">
+          <h4 class="text-center"> Signup</h4>
+          <hr />
+          {{#if msg}}
+          <div class="alert alert-warning" role="alert">
+            Username or email already exist
+          </div>
+          {{/if}}
+          <div class="form-group">
+            <label for="firstname">Firstname <sup>*</sup></label>
+            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Firstname" required>
+            <span class="error_form" id="fname_error_message"></span>
+          </div>
+          <div class="form-group">
+            <label for="lastname">Lastname <sup>*</sup></label>
+            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="lastname" required>
+            <span class="error_form" id="lname_error_message"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email <sup>*</sup></label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+            <span class="error_form" id="email_error_message"></span>
+          </div>
+          <div class="form-group">
+            <label for="username">Username <sup>*</sup></label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+            <span class="error_form" id="uname_error_message"></span>
+          </div>
+          <div class="form-group">
+            <label for="password">Password <sup>*</sup></label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            <span class="error_form" id="password_error_message"></span>
+          </div>
+          <div class="form-group">
+            <label for="Contact Number">Contact Number <sup>*</sup></label>
+            <input type="Contact Number" class="form-control" id="Contact Number" name="Contact Number"
+              placeholder="Contact Number" required>
+            <span class="error_form" id="CNumber_error_message"></span>
+          </div>
+          <div class="form-group">
+            <label for="">Have you ever raised a pet?<sup>*</sup></label>
+            <input type="petExp" class="form-control" id="petExp" name="petExp"
+              placeholder="If Yes share your Experience" required>
+            <span class="error_form" id="petExp_error_message"></span>
+          </div>
+          <div class="form-group">
+            <label for="">Address<sup>*</sup></label>
+            <input type="Address" class="form-control" id="Address" name="Address" placeholder="Address" required>
+            <span class="error_form" id="Address_error_message"></span>
+          </div>
+          <div class="form-group">
+            <label for="Pincode">Pincode <sup>*</sup></label>
+            <input type="Pincode" class="form-control" id="Pincode" name="Pincode" placeholder="Pincode" required>
+            <span class="error_form" id="Pincode_error_message"></span>
+          </div>
+          <button type="submit" id="btn" class=" btn form-control">Submit</button>
+          <p id="signup-link">Already have an account? <a style="color:white; text-decoration:underline" id="signupLink"
+              href="/login">Login</a> here</p>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+
+  <script src="{{script}}"></script>
+</body>
