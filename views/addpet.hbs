@@ -105,6 +105,15 @@
         <label for="phone"><b>Phone</b><span class="text-muted text-danger"> </span></label>
         <input type="tel" placeholder="Enter phone no" id="phone" name="phone">
 
+        <label for="phone"><b>LifeSpan</b><span class="text-muted text-danger"> *</span></label>
+        <input type="tel" placeholder="Enter Lifespan of the pet" id="phone" name="phone" required>
+
+        <label for="phone"><b>weight</b><span class="text-muted text-danger"> </span></label>
+        <input type="tel" placeholder="Enter weight of the pet " id="phone" name="phone">
+
+        <label for="phone"><b>height</b><span class="text-muted text-danger"> </span></label>
+        <input type="tel" placeholder="Enter height of the pet" id="phone" name="phone">
+
         <label for="description"><b>Description</b></label>
         <textarea rows="4" style="width:100%" id="description" name="description"
             placeholder="Write something interesting about your pet..">{{petinfo.description}}</textarea>
@@ -118,11 +127,16 @@
 
         <div class="clearfix">
             <button {{#if petinfo}}type="button" id="updatePetData" pet_id={{petinfo.id}} {{else}}type="submit" {{/if}}
-                class="signupbtn">Add</button>
+                class="signupbtn" onclick="showAlert()">Add</button>
             <button type="button" class="cancelbtn">Cancel</button>
         </div>
     </div>
 </form>
+<script>
+    function showAlert() {
+        alert("Pet is added , and you can check your added pet on home page");
+    }
+</script>
 <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_G0CHEcVYkoiKehQAvnlx55Nh_7B6XLw&libraries=places&callback=initAutocomplete"
     async defer></script>

@@ -3,7 +3,7 @@
 
   <div class="card mb-3">
     <div class="inner">
-      <img class="card-img-top" src="{{petprofile.url}}" width="400px" height="500px" style="object-fit:cover;" />
+      <img class="card-img-top" src="{{petprofile.url}}" style="object-fit:cover;" />
 
     </div>
     <div class="card-body">
@@ -13,9 +13,12 @@
         <span>
           <ul>
 
-            <li class="inline">{{petprofile.category}}</li>
-            <li class="inline">{{petprofile.breeds}}</li>
-            <li class="inline">{{petprofile.age}}</li>
+            <li class="inline"><b>Category:</b>{{petprofile.category}}</li><br>
+            <li class="inline"><b>Breed</b>:{{petprofile.breeds}}</li><br>
+            <li class="inline"><b>Age</b>:{{petprofile.age}}</li><br>
+            <li class="inline"><b>Color</b>:{{petprofile.color}} <br></li>
+            <li class="inline"><b>Weight</b>: 5kgs <br></li>
+            <li class="inline"><b>Height</b>: 2 feet <br></li>
           </ul>
         </span>
 
@@ -26,7 +29,24 @@
         <span <ul>
 
 
-          <li class="inline">{{petprofile.color}}</li>
+          <li class="inline"><b>Description</b>:{{petprofile.description}}</li>
+          </ul>
+        </span>
+
+
+      </div>
+      <hr>
+
+
+
+
+      <hr>
+      <div class="look">
+        <span <ul>
+
+
+          <li class="inline" id="lowercase"><strong><b>Contact Info Of the Owner</b></strong> :
+            ravuridivya@gmail.com</li>
           </ul>
         </span>
 
@@ -34,11 +54,11 @@
       </div>
       <hr>
       <div class="location">
-        <span <ul>
+        {{!-- <span <ul>
 
           <li class="inline">{{petprofile.location}}</li>
 
-          </ul>
+          </ul> --}}
         </span>
         <hr>
       </div>
@@ -49,13 +69,13 @@
       <div class="other">
 
         <span <ul>
-          Vaccinated:
+          <b>Vaccinated:</b>
           {{#if petprofile.vaccinated}}
           <li class="inline">Yes</li>
           {{else}}
           <li class="inline">No</li>
           {{/if}}
-          Trained:
+          <b>Trained:</b>
           {{#if petprofile.trained}}
           <li class="inline">Yes</li>
           {{else}}
@@ -63,7 +83,8 @@
 
           {{/if}}
 
-          </ul></span>
+          </ul>
+        </span>
 
 
       </div>
