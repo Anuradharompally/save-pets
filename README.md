@@ -8,10 +8,10 @@ accordingly.
 
 # We had built an online platform for pet adoption in which user can: 
 
- > List pet animals with their breeds. 
- >List pet animals with their category(either dogs or cats). 
- >Add pet for adoption. 
- >Request pet for adoption. 
- >User can accept or delete the request for adoption.
- Sign up as a new user. 
- Login/logout into the account. 
+ > List pet animals with their breeds. <br>
+ >List pet animals with their category(either dogs or cats). <br>
+ >Add pet for adoption. <br>
+ >Request pet for adoption. <br>
+ >User can accept or delete the request for adoption.<br
+ >Sign up as a new user.<br> 
+ >Login/logout into the account. 
