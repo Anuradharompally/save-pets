@@ -21,7 +21,7 @@ accordingly.
 >REDUX<br>
 >REACT.JS<br>
 >BOOTSTRAP<br>
->NODE.JS<br>
+>NODE.JS
 >CSS<br>                                                                                   
 >MONGODB<br>
 >EXPRESS.JS<br>
