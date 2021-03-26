@@ -12,16 +12,16 @@ accordingly.
  >List pet animals with their category(either dogs or cats). <br>
  >Add pet for adoption. <br>
  >Request pet for adoption. <br>
- >User can accept or delete the request for adoption.<br
+ >User can accept or delete the request for adoption.<br>
  >Sign up as a new user.<br> 
  >Login/logout into the account. 
 
 # Tech Used 
 >JAVASCRIPT<br> 
-REDUX<br>
-REACT.JS<br>
-BOOTSTRAP<br>
-NODE.JS<br>
-CSS<br>                                                                                   
-MONGODB<br>
-EXPRESS.JS<br>
+>REDUX<br>
+>REACT.JS<br>
+>BOOTSTRAP<br>
+>NODE.JS<br>
+>CSS<br>                                                                                   
+>MONGODB<br>
+>EXPRESS.JS<br>
