@@ -9,9 +9,9 @@ accordingly.
 # We had built an online platform for pet adoption in which user can: 
 
  > List pet animals with their breeds. 
- List pet animals with their category(either dogs or cats). 
- Add pet for adoption. 
- Request pet for adoption. 
- User can accept or delete the request for adoption.
+ >List pet animals with their category(either dogs or cats). 
+ >Add pet for adoption. 
+ >Request pet for adoption. 
+ >User can accept or delete the request for adoption.
  Sign up as a new user. 
  Login/logout into the account. 
